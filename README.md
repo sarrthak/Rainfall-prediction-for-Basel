@@ -1,2 +1,2 @@
-# Rainfall-prediction-for-Basel
-Predicting rainfall on a given day for Basel city
+# Rainfall-prediction-for-Chennai
+Predicting rainfall on a given day for Chennai city
