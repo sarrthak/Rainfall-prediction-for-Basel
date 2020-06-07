@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <title>TARP Project</title>
+  </head>
+  <body style="background-color: rgb(54, 56, 56);">
+    <div align="center">
+      <h1 style="font-family: 'Inconsolata', monospace;color: whitesmoke">
+        SMART RAINFALL MANAGMENT SYSTEM
+      </h1>
+     <div class="container">
+        <div id="BarChart" style="width: 900px; height: 500px; margin: 20px 0px 20px 0px;"></div>
+        <div id="piechart" style="width: 900px; height: 500px; margin: 20px 0px 20px 0px;"></div>
+        <div id="linechart" style="width: 900px; height: 500px; margin: 20px 0px 20px 0px;"></div>
+     </div>
+    </div>
+  </body>
+  <script>
+    google.charts.load("current", { packages: ["bar", "corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Locality", "Rainfall in millimeter", { role: "annotation" }],
+        ["Ambattur", 52.345, "52mm"],
+        ["Anna Nagar", 74.095, "74mm"],
+        ["Chepauk", 262.169, "262mm"],
+        ["Dr. Radha Krishnan Nagar", 81.279, "81mm"],
+        ["Egmore", 49.899, "49mm"],
+        ["Harbour", 73.156, "73mm"],
+        ["Kolathur", 74.841, "74mm"],
+        ["Madavaram", 103.656, "103mm"],
+        ["Maduravoyal", 310.127, "333mm"],
+        ["Mylapore", 306.465, "306mm"],
+        ["Perambur", 238.158, "238mm"],
+        ["Royapuram", 47.925, "47mm"],
+        ["Saidapet", 55.926, "55mm"],
+        ["Shollinganallur", 44.156, "44mm"],
+        ["Thiru Nagar", 93.447, "93mm"],
+        ["Velachery", 66.765, "66mm"],
+        ["Villivakkam", 94.52, "94mm"],
+      ]);
+
+      // Optional; add a title and set the width and height of the chart
+      var options = {
+        chart1:{
+            tilte: "Smart Water Management System using IoT and ML",
+            subtitle: "Rainfall in mm for the next week in Chennai",
+        },
+        chart2:{
+            tilte: "Smart Water Management System using IoT and ML",
+            subtitle: "Rainfall in mm for the next week in Chennai",
+            is3D: true,
+        },
+        chart3: {
+            tilte: "Smart Water Management System using IoT and ML",
+            subtitle: "Rainfall in mm for the next week in Chennai",
+        },
+      };
+
+      // Display the chart inside the <div> element with id="piechart"
+      var chart1 = new google.charts.Bar(document.getElementById("BarChart"));
+      var chart2 = new google.visualization.PieChart(
+        document.getElementById("piechart")
+      );
+      var chart3 = new google.visualization.LineChart(
+        document.getElementById("linechart")
+      );
+      chart1.draw(data, options.chart1);
+      chart2.draw(data, options.chart2);
+      chart3.draw(data, options.chart3);
+    }
+  </script>
+</html>

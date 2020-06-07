@@ -1,0 +1,18 @@
+Values from Random Forest Model regression 
+[Ambattur, 52.34575097547994]
+[Anna Nagar, 74.09560785938433]
+[Chepauk, 262.1697982478466
+[Dr. Radha Krishnan Nagar, 81.27994066762692]
+[Egmore, 49.89955774894102]
+[Harbour, 73.15657184855631]
+[Kolathur, 74.84129079966692]
+[Madavaram, 103.6562196888369]
+[Maduravoyal, 333.1278537302281]
+[Mylapore, 306.4650183728506]
+[Perambur, 238.1585654398275]
+[Royapuram, 47.92591070647802]
+[Saidapet, 55.92671601294662]
+[Shollinganallur, 44.15674654144764]
+[Thiruvi Ka Nagar, 93.44723256333457]
+[Velachery, 66.76513356223731]
+[Villivakkam, 94.52012566002053]
